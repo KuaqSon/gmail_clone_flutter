@@ -3,6 +3,7 @@ import 'package:community_material_icon/community_material_icon.dart';
 import 'package:gmail_clone/widget/header.dart';
 import 'package:gmail_clone/widget/mails.dart';
 import 'package:gmail_clone/widget/primary_mail.dart';
+import 'package:gmail_clone/widget/side_menu.dart';
 import 'package:outline_material_icons/outline_material_icons.dart';
 
 void main() {
@@ -26,6 +27,7 @@ class Home extends StatelessWidget {
           color: Colors.black,
         ),
       ),
+      drawer: SideMenu(),
       body: Container(
         padding: EdgeInsets.only(top: MediaQuery.of(context).padding.top),
         child: ListView(
