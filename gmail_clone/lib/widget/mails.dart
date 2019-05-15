@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:community_material_icon/community_material_icon.dart';
+import 'dart:math' as math;
 
 class Mails extends StatelessWidget {
   final String sender;
@@ -24,14 +25,11 @@ class Mails extends StatelessWidget {
           Container(
             width: 35,
             height: 35,
-            margin: const EdgeInsets.only(top: 8),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: NetworkImage(
-                  'https://avatars3.githubusercontent.com/u/35871959?s=460&v=4',
-                ),
-              ),
+            margin: const EdgeInsets.only(top: 4),
+            child: CircleAvatar(
+              radius: 25.0,
+              child: Text(this.sender.substring(0, 1).toUpperCase(), style: TextStyle(color: Colors.white)),
+              backgroundColor: Color((math.Random().nextDouble() * 0xFFFFFF).toInt() << 0).withOpacity(1.0),
             ),
           ),
           Padding(
