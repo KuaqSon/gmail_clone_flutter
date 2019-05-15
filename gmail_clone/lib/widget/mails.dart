@@ -16,14 +16,15 @@ class Mails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(30, 16, 16, 16),
+      margin: EdgeInsets.fromLTRB(16, 16, 16, 16),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
-            width: 45,
-            height: 45,
+            width: 35,
+            height: 35,
+            margin: const EdgeInsets.only(top: 8),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
@@ -34,13 +35,13 @@ class Mails extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 10),
+            padding: const EdgeInsets.only(left: 20),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.7,
+                  width: MediaQuery.of(context).size.width * 0.77,
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -70,7 +71,7 @@ class Mails extends StatelessWidget {
                       fontFamily: 'GoogleMedium'),
                 ),
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.7,
+                  width: MediaQuery.of(context).size.width * 0.77,
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
