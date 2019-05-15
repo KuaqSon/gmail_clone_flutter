@@ -54,7 +54,7 @@ class PrimaryMail extends StatelessWidget {
             child: Text(
               this.count,
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 12, fontFamily: 'GoogleMedium'),
+              style: TextStyle(fontSize: 12, fontFamily: 'GoogleMedium', color: Colors.white),
             ),
             decoration: BoxDecoration(
                 color: this.colors,

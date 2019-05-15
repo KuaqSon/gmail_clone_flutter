@@ -8,7 +8,7 @@ import 'package:outline_material_icons/outline_material_icons.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData.dark(),
+    theme: ThemeData.light(),
     debugShowCheckedModeBanner: false,
     home: Home(),
   ));
